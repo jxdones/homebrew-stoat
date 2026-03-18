@@ -5,21 +5,21 @@
 class Stoat < Formula
   desc "Terminal-native SQLite and PostgreSQL TUI client"
   homepage "https://github.com/jxdones/stoat"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jxdones/stoat/releases/download/v0.9.0/stoat_0.9.0_darwin_amd64.tar.gz"
-      sha256 "a3687026bb68304132f06ddcecfab19da39a13bde5461cd100baa5dcbc5a1299"
+      url "https://github.com/jxdones/stoat/releases/download/v0.9.1/stoat_0.9.1_darwin_amd64.tar.gz"
+      sha256 "6e3a848a54c706f1ed840138926116fff28a925042697806e2d703e8406f0165"
 
       define_method(:install) do
         bin.install "stoat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jxdones/stoat/releases/download/v0.9.0/stoat_0.9.0_darwin_arm64.tar.gz"
-      sha256 "13410a910a8da6cc6097353d726e89fab1a2b83083ba1156c10715cc01a167ba"
+      url "https://github.com/jxdones/stoat/releases/download/v0.9.1/stoat_0.9.1_darwin_arm64.tar.gz"
+      sha256 "8ea6834638140ce9e0b605d6f41fc425b09553efd3c5dfeeccfae7bb1eeae468"
 
       define_method(:install) do
         bin.install "stoat"
@@ -29,15 +29,15 @@ class Stoat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jxdones/stoat/releases/download/v0.9.0/stoat_0.9.0_linux_amd64.tar.gz"
-      sha256 "9c9bf75fee9a9d0459587d160887ed2630ffa394f3fa57acb3173899ba2b0a2d"
+      url "https://github.com/jxdones/stoat/releases/download/v0.9.1/stoat_0.9.1_linux_amd64.tar.gz"
+      sha256 "5e4e68d2e79d3ac0bc9cda84353fd057ce4796a0c563caa24bf2e3e491766073"
       define_method(:install) do
         bin.install "stoat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jxdones/stoat/releases/download/v0.9.0/stoat_0.9.0_linux_arm64.tar.gz"
-      sha256 "0d89840a8659876c127e0b658d565b81c6a55893afbb031af8b7d62f42a254b5"
+      url "https://github.com/jxdones/stoat/releases/download/v0.9.1/stoat_0.9.1_linux_arm64.tar.gz"
+      sha256 "4db385106d76ee127b8fabcef239b149f594e4cfe4e408341a274a129091339a"
       define_method(:install) do
         bin.install "stoat"
       end
