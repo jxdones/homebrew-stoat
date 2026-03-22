@@ -5,21 +5,21 @@
 class Stoat < Formula
   desc "Terminal-native SQLite and PostgreSQL TUI client"
   homepage "https://github.com/jxdones/stoat"
-  version "0.11.0"
+  version "0.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jxdones/stoat/releases/download/v0.11.0/stoat_0.11.0_darwin_amd64.tar.gz"
-      sha256 "79bfb960e573ace76c7505abe6517c7245b88c3ebf391e5e4034ebd454bb4374"
+      url "https://github.com/jxdones/stoat/releases/download/v0.12.0/stoat_0.12.0_darwin_amd64.tar.gz"
+      sha256 "6cedb79f0d42c4de565fd9f9d6ad03a528d7ea82092c459e3ce42d6ed1420a04"
 
       define_method(:install) do
         bin.install "stoat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jxdones/stoat/releases/download/v0.11.0/stoat_0.11.0_darwin_arm64.tar.gz"
-      sha256 "fd35b613e8cf80ffdf1823eaed27e0e981b8a960699961a545b55d82603674e4"
+      url "https://github.com/jxdones/stoat/releases/download/v0.12.0/stoat_0.12.0_darwin_arm64.tar.gz"
+      sha256 "766674dfb3bd96527352792c632dc7a2d11b4fd83104f9d3aa831d6699570edb"
 
       define_method(:install) do
         bin.install "stoat"
@@ -29,15 +29,15 @@ class Stoat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jxdones/stoat/releases/download/v0.11.0/stoat_0.11.0_linux_amd64.tar.gz"
-      sha256 "2069a3a71ef933df8b7152b13f479c800ff8fde3010b244fef376847d0738bef"
+      url "https://github.com/jxdones/stoat/releases/download/v0.12.0/stoat_0.12.0_linux_amd64.tar.gz"
+      sha256 "ff15e990be2d5e5b906f16dc12404d81ca7335232b551c2adda32fff6408b995"
       define_method(:install) do
         bin.install "stoat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jxdones/stoat/releases/download/v0.11.0/stoat_0.11.0_linux_arm64.tar.gz"
-      sha256 "ba6d8fe19a0f77497d10950ab41c11069a559fb0d78df46b173ec22ab27e191b"
+      url "https://github.com/jxdones/stoat/releases/download/v0.12.0/stoat_0.12.0_linux_arm64.tar.gz"
+      sha256 "5962071efbbcbe5412c182ec24b0688c928e6439e2dc3860dac976317a8371a5"
       define_method(:install) do
         bin.install "stoat"
       end
