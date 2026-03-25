@@ -3,7 +3,7 @@ cask "stoat" do
   name "stoat"
   desc "The database client for people who don't leave the terminal."
   homepage "https://github.com/jxdones/stoat"
-  version "0.14.0"
+  version "0.14.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "stoat" do
   on_macos do
     on_intel do
       url "https://github.com/jxdones/stoat/releases/download/v#{version}/stoat_#{version}_darwin_amd64.tar.gz"
-      sha256 "453e764ebbb45989b22db0efce86bdd5dc7532a1f57a04857d5e7d8c483d691f"
+      sha256 "9c11fe622e7fd13830e592adb6d4631aec5a488e235b1d6059b4773c78f1bc5e"
     end
     on_arm do
       url "https://github.com/jxdones/stoat/releases/download/v#{version}/stoat_#{version}_darwin_arm64.tar.gz"
-      sha256 "6cc4c2471175bfd5ce5f4a4923ce8addd8286e0a26076a6db6891bb2c8fa458b"
+      sha256 "b0579bff37b4f1e236c13d00a2337f68d722df7302711edc49a78ad100ab1846"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jxdones/stoat/releases/download/v#{version}/stoat_#{version}_linux_amd64.tar.gz"
-      sha256 "7077bddf0c724c06ddc62d336dce9479d76e13977a85f65399202c9037f91e9d"
+      sha256 "f0987df202598fe680b39e81de6b1d3d1dd0d52905ab9c1abcc2fa02e67f8b52"
     end
     on_arm do
       url "https://github.com/jxdones/stoat/releases/download/v#{version}/stoat_#{version}_linux_arm64.tar.gz"
-      sha256 "89d2fd8df013a29598cb0fcdc9431558286056f5279e4448b9dd6a4037077db6"
+      sha256 "98bc79b31de986e4eeb389947daec0a0a1f24974a03fb802fe3a62ebe43d7901"
     end
   end
 
